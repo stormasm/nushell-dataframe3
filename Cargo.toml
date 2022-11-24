@@ -54,6 +54,7 @@ nu-table = { path = "./crates/nu-table", version = "0.71.1"  }
 nu-term-grid = { path = "./crates/nu-term-grid", version = "0.71.1"  }
 nu-utils = { path = "./crates/nu-utils", version = "0.71.1"  }
 reedline = { version = "0.14.0", features = ["bashisms", "sqlite"]}
+nu-polars = { path = "./crates/nu-polars", version = "0.71.1", optional = true  }
 
 rayon = "1.5.1"
 is_executable = "1.0.1"
@@ -100,7 +101,7 @@ trash-support = ["nu-command/trash-support"]
 # Extra
 
 # Dataframe feature for nushell
-dataframe = ["nu-command/dataframe"]
+dataframe = ["nu-polars/dataframe"]
 
 # Database commands for nushell
 database = ["nu-command/database"]
